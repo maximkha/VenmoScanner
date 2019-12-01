@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Venmo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <script src="main.js"></script>
+    <style type="text/css">
+        #mynetwork {
+            position: absolute;
+            height: 80%;
+            width: 80%;
+            top: 10%;
+            left: 10%;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div id="mynetwork"></div>
+    <div>
+        <span>User:</span>
+        <input type="text" id="initial">
+        <span>Depth:</span>
+        <input type="text" id="depthText">
+        <span>IO:</span>
+        <textarea id="io"></textarea>
+        <button onclick="start()">Start</button>
+        <button onclick="exportNet()">Export</button>
+    </div>
+</body>
+</html>
